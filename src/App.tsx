@@ -61,6 +61,9 @@ export default function App() {
 
         {/* Phần tiêu đề và nút tải file diễn biến chi tiết */}
         <header className="flex flex-col items-center mb-10 sm:mb-14">
+          <div className="mb-3.5 flex items-center justify-center w-14 h-14 rounded-2xl bg-white border border-neutral-200/90 shadow-xs p-2.5">
+            <img src="/favicon.svg" alt="Biểu tượng pháp lý" className="w-full h-full object-contain" />
+          </div>
           <h1
             id="main-title"
             className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center tracking-tight text-neutral-950 uppercase mb-4 sm:mb-6"
