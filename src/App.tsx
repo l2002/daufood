@@ -83,8 +83,8 @@ export default function App() {
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a
               id="download-detailed-report-btn"
-              href="/Don_de_nghi_hoa_giai_va_dien_bien_chi_tiet.pdf"
-              download="Don_de_nghi_hoa_giai_va_dien_bien_chi_tiet.pdf"
+              href="/Don_de_nghi_hoa_giai_tranh_chap_lao_dong.pdf"
+              download="Don_de_nghi_hoa_giai_tranh_chap_lao_dong.pdf"
               className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-neutral-900 text-white font-medium text-sm sm:text-base shadow-sm hover:bg-neutral-800 active:scale-[0.98] transition-all duration-200 border border-neutral-800 cursor-pointer"
             >
               <Download className="w-5 h-5 text-neutral-300" />
@@ -93,7 +93,7 @@ export default function App() {
 
             <a
               id="view-detailed-report-btn"
-              href="/Don_de_nghi_hoa_giai_va_dien_bien_chi_tiet.pdf"
+              href="/Don_de_nghi_hoa_giai_tranh_chap_lao_dong.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white text-neutral-800 font-medium text-sm sm:text-base shadow-sm hover:bg-neutral-50 active:scale-[0.98] transition-all duration-200 border border-neutral-300 cursor-pointer"
@@ -131,8 +131,8 @@ export default function App() {
           </p>
           <a
             id="footer-download-detailed-report-btn"
-            href="/Don_de_nghi_hoa_giai_va_dien_bien_chi_tiet.pdf"
-            download="Don_de_nghi_hoa_giai_va_dien_bien_chi_tiet.pdf"
+            href="/Don_de_nghi_hoa_giai_tranh_chap_lao_dong.pdf"
+            download="Don_de_nghi_hoa_giai_tranh_chap_lao_dong.pdf"
             className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl bg-neutral-900 text-white font-medium text-sm sm:text-base shadow-sm hover:bg-neutral-800 active:scale-[0.98] transition-all duration-200 border border-neutral-800 cursor-pointer"
           >
             <Download className="w-5 h-5 text-neutral-300" />
