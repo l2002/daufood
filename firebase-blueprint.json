@@ -46,6 +46,22 @@
           "required": false
         }
       }
+    },
+    "presence": {
+      "title": "Người dùng trực tuyến",
+      "description": "Danh sách phiên tab/người dùng đang trực tuyến thời gian thực",
+      "fields": {
+        "lastActive": {
+          "type": "timestamp",
+          "description": "Thời gian hoạt động gần nhất (heartbeat)",
+          "required": true
+        },
+        "createdAt": {
+          "type": "timestamp",
+          "description": "Thời gian mở tab",
+          "required": true
+        }
+      }
     }
   }
 }

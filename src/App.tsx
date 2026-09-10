@@ -13,6 +13,7 @@ import { SeoKeywordsBar } from './components/SeoKeywordsBar';
 import { BackToTopButton } from './components/BackToTopButton';
 import { ImageZoomModal } from './components/ImageZoomModal';
 import { VisitorCounter } from './components/VisitorCounter';
+import { ReadingProgressBar } from './components/ReadingProgressBar';
 
 export default function App() {
   const [zoomImage, setZoomImage] = useState<{ src: string; alt: string } | null>(null);
@@ -30,6 +31,9 @@ export default function App() {
       id="evidence-landing-page"
       className="min-h-screen bg-neutral-100/70 text-neutral-900 font-sans antialiased py-6 sm:py-10 px-3 sm:px-6 md:px-8"
     >
+      {/* Thanh tiến độ đọc hồ sơ tài liệu chứng cứ cố định ở đầu màn hình */}
+      <ReadingProgressBar />
+
       <div className="max-w-5xl mx-auto">
         {/* Thanh hiển thị số lượt truy cập và người đang đọc ở đầu trang */}
         <div className="flex justify-center mb-6 sm:mb-8">
