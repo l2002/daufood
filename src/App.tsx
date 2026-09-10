@@ -64,12 +64,20 @@ export default function App() {
           <div className="mb-3.5 flex items-center justify-center w-14 h-14 rounded-2xl bg-white border border-neutral-200/90 shadow-xs p-2.5">
             <img src="/favicon.svg" alt="Biểu tượng pháp lý" className="w-full h-full object-contain" />
           </div>
+          
           <h1
             id="main-title"
             className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center tracking-tight text-neutral-950 uppercase mb-4 sm:mb-6"
           >
-            DANH SÁCH CHỨNG CỨ KÈM THEO
+            DANH SÁCH CHỨNG CỨ KÈM THEO | ĐẬU FOOD REVIEW
           </h1>
+
+        <h2
+        id="main-title"
+        className="text-xl sm:text-2xl md:text-2xl font-extrabold text-center tracking-tight text-neutral-950 mb-4 sm:mb-6"
+      >
+        Đậu Food viện cớ nhân viên part-time nghỉ ngang để không thanh toán tiền công
+      </h2>
 
           {/* Nút tải và xem file diễn biến chi tiết */}
           <div className="flex flex-wrap items-center justify-center gap-3">

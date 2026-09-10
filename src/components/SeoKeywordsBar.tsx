@@ -1,11 +1,16 @@
 export const SEO_KEYWORDS = [
+  'đậu food',
+  'đậu food review',
   'review đậu food',
   'đánh giá đậu food',
   'công ty tnhh đậu food',
+  'đậu food không trả lương nhân viên',
   'tranh chấp tiền công đậu food',
   'đậu food 296 võ thành trang',
   'trải nghiệm làm việc đậu food',
   'bảo vệ người lao động part-time',
+  'bảo vệ người lao động',
+  'bảo vệ sinh viên lao động'
 ];
 
 export function SeoKeywordsBar() {
