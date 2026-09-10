@@ -2,5 +2,7 @@
   "name": "ĐẬU FOOD REVIEW",
   "description": "Trang chứng cứ và đánh giá Đậu Food phục vụ làm rõ tranh chấp lao động, bảo vệ quyền lợi người lao động và sinh viên",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

@@ -12,6 +12,8 @@ import { LegalDisclaimer } from './components/LegalDisclaimer';
 import { SeoKeywordsBar } from './components/SeoKeywordsBar';
 import { BackToTopButton } from './components/BackToTopButton';
 import { ImageZoomModal } from './components/ImageZoomModal';
+import { VisitorCounter } from './components/VisitorCounter';
+import { ReadingProgressBar } from './components/ReadingProgressBar';
 
 export default function App() {
   const [zoomImage, setZoomImage] = useState<{ src: string; alt: string } | null>(null);
@@ -29,7 +31,15 @@ export default function App() {
       id="evidence-landing-page"
       className="min-h-screen bg-neutral-100/70 text-neutral-900 font-sans antialiased py-6 sm:py-10 px-3 sm:px-6 md:px-8"
     >
+      {/* Thanh tiến độ đọc hồ sơ tài liệu chứng cứ cố định ở đầu màn hình */}
+      <ReadingProgressBar />
+
       <div className="max-w-5xl mx-auto">
+        {/* Thanh hiển thị số lượt truy cập và người đang đọc ở đầu trang */}
+        <div className="flex justify-center mb-6 sm:mb-8">
+          <VisitorCounter />
+        </div>
+
         {/* Banner thông báo quy định pháp luật mới về chậm trả lương */}
         <aside
           id="legal-decree-banner"
@@ -61,23 +71,26 @@ export default function App() {
 
         {/* Phần tiêu đề và nút tải file diễn biến chi tiết */}
         <header className="flex flex-col items-center mb-10 sm:mb-14">
-          <div className="mb-3.5 flex items-center justify-center w-14 h-14 rounded-2xl bg-white border border-neutral-200/90 shadow-xs p-2.5">
+          <div className="mb-4 flex items-center justify-center w-14 h-14 rounded-2xl bg-white border border-neutral-200/90 shadow-xs p-2.5">
             <img src="/favicon.svg" alt="Biểu tượng pháp lý" className="w-full h-full object-contain" />
           </div>
           
-          <h1
-            id="main-title"
-            className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center tracking-tight text-neutral-950 uppercase mb-4 sm:mb-6"
-          >
-            DANH SÁCH CHỨNG CỨ KÈM THEO | ĐẬU FOOD REVIEW
-          </h1>
+          {/* Thanh tiêu đề DANH SÁCH CHỨNG CỨ KÈM THEO | ĐẬU FOOD REVIEW như ảnh 2 */}
+          <div className="w-full max-w-4xl bg-[#f2f3f5] border border-neutral-300/80 rounded-xl py-3 px-4 mb-4 sm:mb-5 shadow-2xs">
+            <h1
+              id="main-title"
+              className="text-base sm:text-xl md:text-2xl lg:text-3xl font-black text-center tracking-tight text-black uppercase"
+            >
+              DANH SÁCH CHỨNG CỨ KÈM THEO | ĐẬU FOOD REVIEW
+            </h1>
+          </div>
 
-        <h2
-        id="main-title"
-        className="text-xl sm:text-2xl md:text-2xl font-extrabold text-center tracking-tight text-neutral-950 mb-4 sm:mb-6"
-      >
-        Đậu Food viện cớ nhân viên part-time nghỉ ngang để không thanh toán tiền công
-      </h2>
+          <h2
+            id="sub-title"
+            className="text-base sm:text-lg md:text-xl font-extrabold text-center tracking-tight text-neutral-800 mb-6 max-w-3xl leading-snug px-2"
+          >
+            Nhân sự Đậu Food viện cớ nhân viên part-time nghỉ ngang để không thanh toán tiền công
+          </h2>
 
           {/* Nút tải và xem file diễn biến chi tiết */}
           <div className="flex flex-wrap items-center justify-center gap-3">

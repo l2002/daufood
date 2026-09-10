@@ -15,5 +15,15 @@ service cloud.firestore {
       allow update: if request.resource.data.diff(resource.data).affectedKeys().hasOnly(['likes', 'likedBy']);
       allow delete: if false;
     }
+
+    match /stats/{statId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    match /presence/{presenceId} {
+      allow read: if true;
+      allow write: if true;
+    }
   }
 }

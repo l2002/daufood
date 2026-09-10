@@ -30,6 +30,38 @@
           "required": false
         }
       }
+    },
+    "stats": {
+      "title": "Thống kê lượt truy cập",
+      "description": "Thống kê số lượt truy cập trang web phục vụ tạo niềm tin cho người dùng",
+      "fields": {
+        "pageViews": {
+          "type": "number",
+          "description": "Tổng số lượt truy cập trang web",
+          "required": true
+        },
+        "updatedAt": {
+          "type": "timestamp",
+          "description": "Thời gian cập nhật gần nhất",
+          "required": false
+        }
+      }
+    },
+    "presence": {
+      "title": "Người dùng trực tuyến",
+      "description": "Danh sách phiên tab/người dùng đang trực tuyến thời gian thực",
+      "fields": {
+        "lastActive": {
+          "type": "timestamp",
+          "description": "Thời gian hoạt động gần nhất (heartbeat)",
+          "required": true
+        },
+        "createdAt": {
+          "type": "timestamp",
+          "description": "Thời gian mở tab",
+          "required": true
+        }
+      }
     }
   }
 }
