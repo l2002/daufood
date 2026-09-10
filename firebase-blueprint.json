@@ -1,0 +1,35 @@
+{
+  "entities": {
+    "comments": {
+      "title": "Bình luận và chia sẻ",
+      "description": "Danh sách bình luận, ý kiến đóng góp và chia sẻ của cộng đồng người lao động và sinh viên",
+      "fields": {
+        "authorName": {
+          "type": "string",
+          "description": "Tên hoặc biệt danh người bình luận",
+          "required": true
+        },
+        "content": {
+          "type": "string",
+          "description": "Nội dung bình luận",
+          "required": true
+        },
+        "createdAt": {
+          "type": "timestamp",
+          "description": "Thời gian gửi bình luận",
+          "required": true
+        },
+        "likes": {
+          "type": "number",
+          "description": "Số lượt thích",
+          "required": false
+        },
+        "roleBadge": {
+          "type": "string",
+          "description": "Nhãn người bình luận (Sinh viên, Người lao động, v.v.)",
+          "required": false
+        }
+      }
+    }
+  }
+}
